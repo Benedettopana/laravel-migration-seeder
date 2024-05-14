@@ -44,5 +44,9 @@
 
     </table>
 </div>
+<div class="container-xxl d-flex justify-content-center ">
+
+    <div class="paginator ">{{$trains->links()}}</div>
+</div>
 
 @endsection
