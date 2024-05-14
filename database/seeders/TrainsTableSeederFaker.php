@@ -25,6 +25,9 @@ class TrainsTableSeederFaker extends Seeder
             $new_train->train_code = $faker->regexify('[A-Z]{5}[0-4]{3}');;
             $new_train->carriages_number = $faker->randomDigitNotNull();
             $new_train->is_full = $faker->boolean();
+            $new_train->in_time = $faker->boolean();
+            $new_train->cancelled = $faker->boolean();
+
             $new_train->save();
         }
     }

@@ -26,14 +26,14 @@
               <td>{{ $train->arrival_time }}</td>
               <td>{{ $train->train_code }}</td>
               @if ($train->in_time)
-								<td>In Orario</td>
+								<td class="text-success">In Orario</td>
 							@else
-								<td>In Ritardo</td>
+								<td class="text-danger">In Ritardo</td>
 							@endif
               @if ($train->cancelled)
-								<td>Cancellato</td>
+								<td class="text-danger">Cancellato</td>
 							@else
-								<td>Regolare</td>
+								<td class="text-success">Regolare</td>
 							@endif
 
             </tr>
