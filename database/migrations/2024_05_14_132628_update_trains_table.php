@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('train_migration', function (Blueprint $table) {
+        Schema::table('trains', function (Blueprint $table) {
             $table->boolean('is_full')->default(0);
         });
     }
@@ -21,7 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('train_migration', function (Blueprint $table) {
+        Schema::table('trains', function (Blueprint $table) {
             $table->dropColumn('is_full');
         });
     }
