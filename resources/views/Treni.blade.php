@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-xl">
     <h1 class="text-center">Treni</h1>
-    <table class="table table-dark table-striped">
+    <table class="table table-dark table-striped table-hover">
         <thead>
             <tr>
               <th scope="col">Azienda</th>
